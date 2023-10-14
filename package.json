@@ -1,0 +1,15 @@
+{
+  "name": "com.itibsoft.localizationmanager",
+  "version": "0.0.1",
+  "displayName": "Localization Manager",
+  "description": "This system is designed to work with User Interfaces (UI). It allows you to create interfaces without thinking about how to call this or that window, as everything is handled by the manager.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "http://docs.itibsoft.ru",
+  "changelogUrl": "http://docs.itibsoft.ru",
+  "author": {
+    "name": "Itibsoft",
+    "email": "itibsoft@gmail.com",
+    "url": "itibsoft.ru"
+  }
+}
