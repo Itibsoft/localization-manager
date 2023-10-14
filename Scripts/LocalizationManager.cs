@@ -4,6 +4,11 @@ namespace Itibsoft.LocalizationManager
 {
     public class LocalizationManager : ILocalizationManager
     {
+        public void SetLanguage(Languages language)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public Languages GetCurrentLanguage()
         {
             throw new System.NotImplementedException();
