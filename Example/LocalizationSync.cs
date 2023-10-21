@@ -16,8 +16,6 @@ namespace Itibsoft
 
         [SerializeField] private Languages _languages;
         
-        
-        
         private LocalizationManager.LocalizationManager _localizationManager;
         
         private void Awake()
