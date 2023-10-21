@@ -7,11 +7,11 @@ namespace Itibsoft
 {
     public class DownloaderTable : MonoBehaviour
     {
-        private const string _urlTable = "https://docs.google.com/spreadsheets/d/*/gviz/tq?tqx=out:csv&sheet={{LocalizationTable}}";
+        private const string URLTable = "https://docs.google.com/spreadsheets/d/*/gviz/tq?tqx=out:csv&sheet={{LocalizationTable}}";
 
         public void DownloadTable(string sheetId, Action<string> onSheetLoadedAction)
         {
-            string currentUrl = _urlTable.Replace("*", sheetId);
+            var currentUrl = URLTable.Replace("*", sheetId);
             StartCoroutine(DownloadRawTable(currentUrl, onSheetLoadedAction));
         }
 

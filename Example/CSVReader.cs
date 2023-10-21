@@ -1,22 +1,14 @@
 /*
 	CSVReader by Dock. (24/8/11)
 	http://starfruitgames.com
- 
-	usage: 
-	CSVReader.SplitCsvGrid(textString)
- 
-	returns a 2D string array. 
- 
-	Drag onto a gameobject for a demo of CSV parsing.
 */
  
 using UnityEngine;
-using System.Collections;
 using System.Linq; 
  
 public class CSVReader 
 {
-	static public string[,] SplitCsvGrid(string csvText)
+	public static string[,] SplitCsvGrid(string csvText)
 	{
 		string[] lines = csvText.Split("\n"[0]); 
  
@@ -41,8 +33,8 @@ public class CSVReader
  
 		return outputGrid; 
 	}
- 
-	static public string[] SplitCsvLine(string line)
+
+	private static string[] SplitCsvLine(string line)
 	{
 		return (from System.Text.RegularExpressions.Match m in System.Text.RegularExpressions.Regex.Matches(line,
 		@"(((?<x>(?=[,\r\n]+))|""(?<x>([^""]|"""")+)""|(?<x>[^,\r\n]+)),?)", 
