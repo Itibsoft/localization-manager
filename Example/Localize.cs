@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itibsoft
+namespace Itibsoft.LocalizationManager
 {
     [RequireComponent(typeof(Text))]
     public class Localize : MonoBehaviour
@@ -11,10 +11,10 @@ namespace Itibsoft
         
         [SerializeField] private Text _text;
 
-        private LocalizationManager.LocalizationManager _localizationManager;
+        private LocalizationManager _localizationManager;
         private void Start()
         {
-            _localizationManager = new LocalizationManager.LocalizationManager();
+            _localizationManager = new LocalizationManager();
 
             LocalizeHandler();
         }

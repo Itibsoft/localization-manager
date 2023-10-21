@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Itibsoft
+namespace Itibsoft.LocalizationManager
 {
     [CreateAssetMenu(fileName = "LanguagesLocalization", menuName = "Localization/LanguagesLocalization")]
     public class LanguagesLocalization : ScriptableObject

@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace Itibsoft
+namespace Itibsoft.LocalizationManager
 {
     public class DownloaderTable : MonoBehaviour
     {

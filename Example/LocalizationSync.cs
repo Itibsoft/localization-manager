@@ -2,9 +2,9 @@ using Itibsoft.LocalizationManager;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Itibsoft
+namespace Itibsoft.LocalizationManager
 {
-    //[ExecuteInEditMode]
+    [ExecuteInEditMode]
     public class LocalizationSync : MonoBehaviour
     {
         [Header("Table Id ")] 
@@ -16,11 +16,11 @@ namespace Itibsoft
 
         [SerializeField] private Languages _languages;
         
-        private LocalizationManager.LocalizationManager _localizationManager;
+        private LocalizationManager _localizationManager;
         
         private void Awake()
         {
-            _localizationManager = new LocalizationManager.LocalizationManager();
+            _localizationManager = new LocalizationManager();
             
             _localizationManager.SetSheet(CSVReader.SplitCsvGrid(_csvFile.text));
             
